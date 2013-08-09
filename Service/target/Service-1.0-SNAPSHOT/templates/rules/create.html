@@ -1,0 +1,59 @@
+<h2>Create a Rule</h2>
+<input type="text" id="title" placeholder="Title"><br>
+<textarea rows="15" id="description" class="input-xxlarge" placeholder="Description" ></textarea><br>
+<textarea rows="15" id="content" class="input-xxlarge" placeholder="Content" ></textarea><br>
+<input type="text" id="reference" placeholder="Reference"><br>
+
+<input type="text" id="group" placeholder="Group" readonly=true >
+<div class="btn-group">
+    <button class="dropdown-toggle" role="button" id="gdrop" data-toggle="dropdown" href="#">
+        Select Group
+        <b class = "caret"></b></button>
+    <ul class="dropdown-menu" id="groups" role="menu" aria-labelledby="gdrop">
+    </ul>
+</div>
+<br>
+<input type="text" id="jurisdiction" placeholder="Jurisdiction" readonly=true >
+<div class="btn-group">
+    <button class="dropdown-toggle" role="button" id="jdrop" data-toggle="dropdown" href="#">
+        Select Jurisdiction
+        <b class = "caret"></b></button>
+    <ul class="dropdown-menu" id="jurisdictions" role="menu" aria-labelledby="jdrop">
+    </ul>
+</div>
+
+ <br>
+<input type ="text" id="version" placeholder="Version">
+<input type="button" value="Create">
+
+<div id="GroupModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="GroupModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="GModalLabel">Add/Edit Type</h3>
+    </div>
+    <div class="modal-body">
+        <input type="text" id="newGroup" placeholder="New Group">
+        <input type="button" id="saveGroup" value="Add">
+        <p>Select a Group</p>
+        <ul id="currentGroups"></ul>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+</div>
+
+<div id="JurisModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="GroupModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="JModalLabel">Add/Edit Jurisdiction</h3>
+    </div>
+    <div class="modal-body">
+        <input type="text" id="newJuris" placeholder="New Jurisdiction">
+        <input type="button" id="saveJuris" value="Add">
+        <p>Select a Jurisdiction</p>
+        <ul id="currentJuris"></ul>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+</div>
