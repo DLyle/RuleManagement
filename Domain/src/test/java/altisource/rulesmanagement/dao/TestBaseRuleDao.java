@@ -23,7 +23,7 @@ public class TestBaseRuleDao extends DaoTestBase {
     @Test
     public void testCRUD() throws Exception{
         BufferedReader br = new BufferedReader(
-                new FileReader("/home/ubuntu/projects/practice/mongo/lateChargeRules.drl"));
+                new FileReader("SomeRulesFile"));
         String line = br.readLine();
         while(line != null){
             String[] words = line.split(" ");
